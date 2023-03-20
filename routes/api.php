@@ -19,7 +19,7 @@ Route::group([
 ], function ($router) {
 
     Route::get('/get_category_all', [App\Http\Controllers\ApiController::class, 'get_category_all']);
-    
+    Route::get('/allProduct', [App\Http\Controllers\ApiController::class, 'get_allProudct']);
 });
 
 Route::group([
@@ -32,3 +32,4 @@ Route::group([
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/user-profile', [AuthController::class, 'userProfile']);    
 });
+
