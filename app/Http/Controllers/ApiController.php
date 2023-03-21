@@ -24,7 +24,7 @@ class ApiController extends Controller
 
     public function get_allProudct()
     {
-        $allProudct = 'a';
+        $allProudct = DB::table('product')->get();
         return response()->json([
             'product' => $allProudct
         ], 201);
